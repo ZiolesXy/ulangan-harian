@@ -17,14 +17,14 @@ class SiswaFactory extends Factory
     public function definition(): array
     {
         return [
-            'nama' => $this->faker->name(),
-            'nis' => $this->faker->unique()->numerify('######'), // 6 digit unik
-            'kelas' => $this->faker->randomElement([
+            'nama' => fake()->name(),
+            'nis' => fake()->unique()->numerify('######'), // 6 digit unik
+            'kelas' => fake()->randomElement([
                 'X IPA 1', 'X IPA 2', 'XI IPA 1', 'XI IPA 2',
                 'XII IPA 1', 'XII IPA 2', 'X IPS 1', 'X IPS 2'
             ]),
-            'status' => $this->faker->randomElement(['aktif', 'non-aktif']),
-            'jenis_kelamin' => $this->faker->randomElement(['Laki-laki', 'Perempuan']),
+            'status' => fake()->randomElement(['aktif', 'non-aktif']),
+            'jenis_kelamin' => fake()->randomElement(['Laki-laki', 'Perempuan']),
         ];
     }
 }

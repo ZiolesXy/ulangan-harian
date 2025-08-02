@@ -24,7 +24,7 @@ Sebelum menjalankan aplikasi ini, pastikan sistem Anda memiliki:
 
 1. **Clone repository**
    ```bash
-   git clone [url-repository]
+   git clone https://github.com/ZiolesXy/ulangan-harian
    cd ulangan-harian
    ```
 

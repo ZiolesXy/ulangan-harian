@@ -58,7 +58,7 @@ Sebelum menjalankan aplikasi ini, pastikan sistem Anda memiliki:
 6. **Jalankan migration dan seeder**
    ```bash
    php artisan migrate
-   php artisan db:seed
+   php artisan db:seed --class=SiswaSeeder
    ```
 
 7. **Compile assets**
